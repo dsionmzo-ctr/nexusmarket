@@ -1,5 +1,16 @@
 package application.domain.models;
 
-public class Warehouse {
+import lombok.Getter;
+import lombok.Setter;
+import lombok.NoArgsConstructor;
 
+@Getter
+@Setter
+@NoArgsConstructor
+public abstract class Warehouse {
+
+    private Long warehouseId;
+    private String name;
+    private String location;
+    private Integer capacity;
 }
